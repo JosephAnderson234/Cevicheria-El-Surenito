@@ -1,0 +1,198 @@
+@import url("./specific/home.css");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: "UWC arabic";
+    src: url("../fonts/urw-din-arabic/URW\ DIN-Arabic-Cond-Black.ttf") format("truetype");
+}
+/***********************************/
+/********The header section********/
+/*********************************/
+
+header{
+    background: #d90000;
+}
+.header-container{
+    font-size: 16px;
+    font-family: "UWC arabic";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    position: sticky;
+    background: #d90000;
+}
+.header-container .logo-main{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    width: 90px;
+    padding: 5px;
+}
+.logo-main img{
+    height: 80px;
+}
+
+.header-container .title-main{
+    font-size: 1em;
+    text-align: center;
+}
+
+.header-container .title-main .title{
+    font-size: 2.65em;
+}
+.header-container .title-main .title a{
+    color: black;
+    text-decoration: none;
+}
+
+.header-container .button-show{
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.button-show .button-show-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.button-show-container:hover{
+    background: #eaec74;
+}
+
+/**********************************************/
+/********The end of the header section********/
+/********************************************/
+
+
+
+/********************************/
+/********The nav section********/
+/******************************/
+nav{
+    width: 100%;
+    display: none;
+    transition: 1s;
+}
+    
+
+.show{
+    display: block;
+}
+
+
+.links-main{
+    border-top: black 3px solid;
+    font-size: 16px;
+    height: auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #d90000;
+    padding: 0.6em;
+}
+
+.links-main .link-container{
+    font-family: "UWC arabic";
+    font-size: 1em;
+}
+
+.links-main .link-container a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #d8da66;
+    transition: 0.9s;
+    line-height: 2;
+    /**padding: 0 2em;*/
+    margin: auto;
+    position: relative; }
+    .link-container a:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 3px;
+        background: #d8da66;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: all .3s; }
+        .link-container a:hover:before {
+        width: 100%; 
+    }
+
+.link-container.here a::before{
+    width: 100%;
+}
+/*******************************************/
+/********The end of the nav section********/
+/*****************************************/
+
+
+
+
+
+
+
+/**************************************/
+/*********Starting the footer*********/
+/************************************/
+
+footer {
+    font-size: 16px;
+    width: auto;
+    padding: 1em;
+    background: #d90000;
+    color: #d8da66;
+    font-family: "UWC arabic";
+    display: flex;
+}
+footer .brand-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em;
+    width: 25%;
+}
+
+footer .brand-container .copyright{
+    font-size: 1em;
+}
+
+footer .brand-container .logo-container img{
+    height: 5em;
+}
+
+footer .info-container{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 1em;
+}
+
+footer .info-container a{
+    padding: 0.3em;
+    text-decoration: none;
+    color: #d8da66;
+    font-size: 1.15em;
+}
+
+/************************************/
+/*********Ending the footer*********/
+/**********************************/
