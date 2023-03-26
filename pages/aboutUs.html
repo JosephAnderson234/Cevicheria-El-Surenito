@@ -2,9 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cevicheria el sureñito</title>
+    <meta name="keywords" content="Cevicheria Sureñito Restaurant">
+    <meta name="description" content="La cevicheria que te ofrece lo mejor de lo mejor">
+    <meta name="author" content="JosephDev234">
+    <title>El sureñito</title>
+    <link rel="shortcut icon" href="../sources/icons/Icon-WebSite.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
     <body>
         <header>
@@ -12,36 +16,73 @@
             <div class="header-container">
                 <!--Also here there are containers that will have the elements one per one-->
                 <div class="logo-main">
-                    <img src="./sources/icons/#" alt="logo" class="logo">
+                    <img src="../sources/icons/Final Version.png" alt="logo" class="logo">
                 </div>
                 <div class="title-main">
-                    <h1 class="title">El Sureñito</h1>
+                    <h1 class="title">
+                        <a href="./">El Sureñito</a>
+                    </h1>
                 </div>
                 <div class="button-show">
-                    <ion-icon name="grid-outline"></ion-icon>
-                    <ion-icon name="grid"></ion-icon>
+                    <div class="button-show-container">
+                        <ion-icon name="grid" class="icon-main"></ion-icon>
+                    </div>
                 </div>
             </div>
+            <nav>
+                <ul class="links-main">
+                    <li class="link-container">
+                        <a href="../index.html" class="link">
+                            <ion-icon name="home-outline"></ion-icon>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="link-container">
+                        <a href="./productos.html" class="link">
+                            <ion-icon name="albums-outline"></ion-icon>
+                            Productos
+                        </a>
+                    </li>
+                    <li class="link-container here">
+                        <a href="./aboutUs.html" class="link">
+                            <ion-icon name="business-outline"></ion-icon>
+                            Acerca de Nosotros
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <nav>
-            <ul class="links-main">
-                <li class="link-container">
-                    <a href="#" class="link">Inicio</a>
+        <div class="SI">
+            <ion-icon name="caret-up-circle-outline"></ion-icon>
+        </div>
+        <div class="social-icons">
+            <ul class="social-links-ul">
+                <li class="telefono">
+                    <a href="#">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </a>
                 </li>
-                <li class="link-container">
-                    <a href="#" class="link">Productos</a>
+                <li class="gmail">
+                    <a href="#">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
                 </li>
-                <li class="link-container">
-                    <a href="#" class="link">Acerca de Nosotros</a>
+                <li class="whatsapp">
+                    <a href="#">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
                 </li>
             </ul>
-        </nav>
+        </div>
+
+        
+        
         <footer>
-            <div class="brand-conatainer">
+            <div class="brand-container">
                 <div class="logo-container">
-                    <img src="./sources/icons/#" alt="logo" class="logo2">
+                    <img src="../sources/icons/Final Version.png" alt="logo" class="logo2">
                 </div>
-                <h1 class="copyright"></h1>
+                <h1 class="copyright">©El Sureñito</h1>
             </div>
             <div class="info-container">
                 <a href="#" class="TermsAndConditions">Terminos y condiciones</a>
@@ -50,6 +91,9 @@
         </footer>
     </body>
     <!-- the scripts section -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../scripts/home.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+    </script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+    </script>
 </html>

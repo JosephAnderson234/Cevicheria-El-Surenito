@@ -4,11 +4,13 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    overflow-x: hidden;
+}
 
 @font-face {
     font-family: "UWC arabic";
-    src: url("../fonts/urw-din-arabic/URW\ DIN-Arabic-Cond-Black.ttf") format("truetype");
+    src: url("./fonts/urw-din-arabic/URW\ DIN-Arabic-Cond-Black.ttf") format("truetype");
 }
 /***********************************/
 /********The header section********/
@@ -16,6 +18,10 @@
 
 header{
     background: #d90000;
+    position: sticky;
+    top:0px;
+    left: 0px;
+    z-index: 1;
 }
 .header-container{
     font-size: 16px;
@@ -24,14 +30,14 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 10;
-    position: sticky;
     background: #d90000;
 }
 .header-container .logo-main{
     display: flex;
+    font-size: 1em;
     align-items: center;
-    height: 90px;
-    width: 90px;
+    height: 5.625em;
+    width: 5.625em;
     padding: 5px;
 }
 .logo-main img{
@@ -73,6 +79,30 @@ header{
 
 .button-show-container:hover{
     background: #eaec74;
+}
+
+/*the media querys of the header section*/
+
+@media only screen and (min-width: 1024px) {
+    .button-show, .button-show-container, .icon-main{
+        display: none;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-container{
+        font-size: 1em;
+    }
+
+    .header-container .logo-main{
+        margin: 0.2em;
+    }
+    .header-container .logo-main img{
+        width: 5em;
+        height: 5em;
+    }
 }
 
 /**********************************************/
@@ -139,6 +169,23 @@ nav{
 .link-container.here a::before{
     width: 100%;
 }
+
+/*the media querys of the nav section*/
+@media only screen and (min-width: 1024px) {
+    nav{
+        width: 30%;
+        display: block;
+        position: sticky;
+        top:0;
+    }
+    .links-main{
+        border: none;
+    }
+    .links-main .link-container{
+        font-size: 1em;
+    }
+}
+
 /*******************************************/
 /********The end of the nav section********/
 /*****************************************/
@@ -192,7 +239,138 @@ footer .info-container a{
     color: #d8da66;
     font-size: 1.15em;
 }
+/*The media querys*/
+@media only screen and (min-width: 1024px) {
+    footer .brand-container{
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    footer .brand-container .copyright{
+        font-size: 1.5em;
+        padding-left: 0.5em;
+    }
+}
 
 /************************************/
 /*********Ending the footer*********/
 /**********************************/
+
+
+/******************************************/
+/*********Starting the social bar*********/
+/****************************************/
+.social-icons{
+    height: 0px;
+    top: 70px;
+    transition: 0.5s;
+    position: sticky;
+}
+
+.SI{
+    position: sticky;
+    top: 30px;
+    transform: translateX(92vw) translateY(25em);
+    background: black;
+    transition: 0.5s;
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.SI ion-icon{
+    color: #d8da66;
+    font-size: 2em;
+
+}
+
+.SI.show{
+    transform: translateX(92vw) translateY(25em) rotate(180deg);
+}
+
+.social-icons .social-links-ul{
+    list-style: none;
+    font-size: 2em;
+    width: 32px;
+    transform: translateX(92vw);
+    transition: 0.5s;
+    z-index: 2;
+    position: sticky;
+    top: 1px;
+}
+
+.social-icons ul li{
+    border-radius: 30%;
+    transition: 0.5s;
+    width: 100%;
+    padding: 0.125em;
+}
+.social-icons ul li> a{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.social-icons .social-links-ul .telefono{
+    background: black;
+    transform: translateY(360px);
+}
+
+.social-icons .social-links-ul.moved .telefono{
+    transform: translateY(50px);
+}
+
+.social-icons ul .telefono a{
+    color: white;
+}
+
+.social-icons .social-links-ul .gmail{
+    background: blue;
+    transform: translateY(320px);
+}
+
+.social-icons .social-links-ul.moved .gmail{
+    transform: translateY(50px);
+}
+
+.social-icons ul .gmail a{
+    color: #ffc61d;
+}
+
+.social-icons .social-links-ul .whatsapp{
+    background: #1ad03f;
+    transform: translateY(280px);
+}
+
+.social-icons .social-links-ul.moved .whatsapp{
+    transform: translateY(50px);
+}
+
+.social-icons ul .whatsapp a{
+    color: white;
+}
+.social-icons ul li a{
+    text-decoration: none;
+}
+
+.social-icons .social-links-ul li:hover{
+    filter: brightness(0.8);
+    box-shadow:2px 2px 0.5 black;
+}
+
+@media only screen and (max-width: 830px) {
+    .social-icons{
+        display: none;
+    }
+    .SI{
+        display: none;
+    }
+}
+
+/****************************************/
+/*********Ending the social bar*********/
+/**************************************/
