@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
     <body>
-        <header>
-            <!--Here we made the header that will have the logo, title and button, this last is going to help users to able and disable the floating menu-->
+        <header class="xd">
+            <!--Here we made the header that will have the logo,
+                title and button, this last is going to help 
+                users to able and disable the floating menu-->
             <div class="header-container">
                 <!--Also here there are containers that will have the elements one per one-->
                 <div class="logo-main">
@@ -76,61 +78,67 @@
         </div>
 
         <!-- in this section will be the galery of some images-->
-        <div class="main-scroll-div">
-            <div>
-                <!-- there are some buttons that will move the images to look at this the next one -->
-                <button class="icon before">
-                    <ion-icon name="arrow-back-circle"></ion-icon>
-                </button>
-            </div>
-            
-            <div class="cover">
-                <div class="scroll-image">
-                    <div class="child">
-                        <img class="child-img" src="./sources/images/BANNER.jpg" alt="image1">
-                    </div>
-                    <div class="child">
-                        <img class="child-img" src="./sources/images/#" alt="image2">
-                    </div>
-                    <div class="child">
-                        <img class="child-img" src="./sources/images/#" alt="image3">
-                    </div>
-                    <div class="child">
-                        <img class="child-img" src="./sources/images/#" alt="image4">
-                    </div>
-                    <div class="child">
-                        <img class="child-img" src="./sources/images/#" alt="image5">
-                    </div>
-                    <div class="child">
-                        <img class="child-img" src="./sources/images/#" alt="image6">
+        <div class="generalGallery">
+            <div class="main-scroll-div">
+                <div class="cover-nav" id="iconDivL">
+                    <!-- there are some buttons that will move the images to look at this the next one -->
+                    <button class="icon before">
+                        <ion-icon name="arrow-back-circle"></ion-icon>
+                    </button>
+                </div>
+                <div class="cover">
+                    <div class="scroll-images">
+                        <div class="child">
+                            <img class="child-img" src="./sources/images/BANNER.jpg" alt="image1">
+                        </div>
+                        <div class="child">
+                            <img class="child-img" src="./sources/images/BANNER.jpg" alt="image2">
+                        </div>
+                        <div class="child">
+                            <img class="child-img" src="./sources/images/BANNER.jpg" alt="image3">
+                        </div>
+                        <div class="child">
+                            <img class="child-img" src="./sources/images/BANNER.jpg" alt="image4">
+                        </div>
+                        <div class="child">
+                            <img class="child-img" src="./sources/images/BANNER.jpg" alt="image5">
+                        </div>
+                        <div class="child">
+                            <img class="child-img" src="./sources/images/BANNER.jpg" alt="image6">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <button class="icon after">
-                    <ion-icon name="arrow-forward-circle"></ion-icon>
-                </button>
+                <div class="cover-nav" id="iconDivR">
+                    <button class="icon after">
+                        <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </button>
+                </div>
             </div>
         </div>
         
+        
         <!-- menu section that will show some images -->
         <div class="menu-section">
-            <h1>Disfruta de nuestra sazón casera en tu menú</h1>
+            <div class="title-section">
+                <h1>Disfruta de nuestra sazón casera en tu menú</h1>
+            </div>
             <div class="images-menu">
-                <img src="#" class="1-menu" alt="1">
-                <img src="#" class="2-menu" alt="2">
-                <img src="#" class="3-menu" alt="3">
+                <img src="./sources/images/plato-example.png" class="img-menu" alt="1">
+                <img src="./sources/images/plato-example.png" class="img-menu" alt="2">
+                <img src="./sources/images/plato-example.png" class="img-menu" alt="3">
             </div>
         </div>
         <br/>
 
         <!-- platos a la carta¿s section, the name reveal the rest-->
         <div class="carta-section">
-            <h1> Y platos a la carta:</h1>
+            <div class="title-section">
+                <h1> Y platos a la carta:</h1>
+            </div>
             <div class="images-carta">
-                <img src="#" alt="1" class="1-platos">
-                <img src="#" alt="2" class="2-platos">
-                <img src="#" alt="3" class="3-platos">
+                <img src="./sources/images/plato-example.png" alt="2" class="img-platos">
+                <img src="./sources/images/plato-example.png" alt="3" class="img-platos">
+                <img src="./sources/images/plato-example.png" alt="1" class="img-platos">
             </div>
         </div>
         
@@ -149,6 +157,7 @@
     </body>
     <!-- the scripts section -->
     <script src="./scripts/home.js"></script>
+    <script src="./scripts/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
     </script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">

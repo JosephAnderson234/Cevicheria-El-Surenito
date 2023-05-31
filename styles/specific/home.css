@@ -1,7 +1,208 @@
 /* .menu-section{
     height: 900px;
-}
+} */
 
 .opacity{
-    background: rgba(0, 0, 0, 0.137);
+    background: rgba(0, 0, 0, 0);
+}
+
+.opacity nav .links-main .link-container a{
+    color: black;
+}
+
+/***********************************************/
+/***********The styles of the gallery**********/
+/*********************************************/
+.generalGallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+/*     border: black 1px solid; */
+    transform: translateY(-154px);
+}
+
+.main-scroll-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/*     border: 2px solid red; */
+    position: relative;
+}
+
+.cover{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* .cover::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 5;
+    height: 100vh;
+    width: 100px;
+    background: linear-gradient(90deg, white, transparent);
+}
+
+.cover::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 5;
+    height: 100vh;
+    width: 100px;
+    background: linear-gradient(-90deg, white, transparent);
 } */
+
+.cover-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#iconDivL{
+    position: absolute;
+    top: calc(50vh);
+    left: 0px;
+    z-index: 5;
+}
+
+#iconDivR{
+    position: absolute;
+    top: calc(50vh);
+    right: 0px;
+    z-index: 5;
+}
+
+.icon{
+    color: rgb(226 148 42);
+    font-size: 50px;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.icon:hover{
+    color: black;
+}
+
+.scroll-images{
+    width: 100%;
+    height: 105vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.scroll-images::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+.child{
+    position: relative;
+    min-width: 100vw;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.child-img{
+    width: 100vw;
+    height: 100%;
+}
+
+@media (max-width:1024px) {
+    
+    .scroll-images{
+        height: 200vh;
+    }
+
+    .child{
+        overflow: none;
+        width: auto;
+    }
+    .child-img{
+        width: auto;
+        height: 105vh;
+    }
+}
+
+/***********************************************/
+/****The end of the styles of the gallery******/
+/*********************************************/
+
+
+/*******************************************/
+/*********Section of the examples**********/
+/*****************************************/
+.menu-section{
+    transform: translateY(-137px);
+    width: 100%;
+    height: 28em;
+    font-size: 16px;
+    transition: 0.8s;
+}
+
+.title-section{
+    width: 100%;
+    background: yellow;
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-section h1{
+    font-family: "UWC arabic";
+    width: 70%;
+    text-align: center;
+    font-size: 3em;
+}
+
+.images-menu, .images-carta{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30em;
+    margin: 0 auto;
+}
+
+.img-menu, .img-platos{
+    width: 200px;
+    border-radius: 10%;
+}
+
+@media (max-width:835px) {
+    .title-section h1{
+        font-family: "UWC arabic";
+        width: 80%;
+        text-align: center;
+        font-size: 2em;
+    }
+}
+
+@media (max-width:750px) {
+    .menu-section{
+        height: auto;
+    }
+    .images-menu, .images-carta{
+        padding-top: 2em;
+        flex-direction: column;
+        height: auto;
+    }
+    .img-menu, .img-platos{
+        margin: 1.5em;
+    }
+}

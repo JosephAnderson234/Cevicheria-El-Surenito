@@ -1,28 +1,30 @@
-const button = document.querySelector(".button-show-container");
-const nav = document.querySelector("nav");
-button.addEventListener("click", ()=>{
-    nav.classList.toggle("show");
-})
 
-
-const siButton = document.querySelector(".SI");
-const socialBar = document.querySelector(".social-links-ul");
-
-siButton.addEventListener("click", ()=>{
-    siButton.classList.toggle("show");
-    socialBar.classList.toggle("moved");
-})
 
 const header = document.querySelector("header");
 const position = 0;
 
-/* window.addEventListener("scroll", ()=>{
+function clearHeader() {
     const scrollPosition = document.documentElement.scrollTop;
-    console.log(scrollPosition)
     if (scrollPosition == position){
         header.classList.add("opacity");
     }
     else{
         header.classList.remove("opacity");
     }
-}) */
+}
+
+window.addEventListener("scroll", clearHeader)
+setTimeout(clearHeader, 0000)
+
+const buttonGalleryB = document.getElementsByClassName("before");
+const buttonGalleryA = document.getElementsByClassName("after");
+
+buttonGalleryB[0].addEventListener("click", ()=>{
+    var left = document.querySelector(".scroll-images");
+    left.scrollBy(-400, 0);
+})
+
+buttonGalleryA[0].addEventListener("click", ()=>{
+    var left = document.querySelector(".scroll-images");
+    left.scrollBy(400, 0);
+})
