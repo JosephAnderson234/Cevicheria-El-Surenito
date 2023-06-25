@@ -1,6 +1,10 @@
 @import url("./specific/home.css");
+@import url("./specific/products.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
 :root{
-    --vgnav: #d8da66;
+    --bgnav: #d8da66;
+    --bgred: #d90000;
 }
 
 *{
@@ -20,7 +24,7 @@ body{
 /*********************************/
 
 header{
-    background: #d90000;
+    background: var(--bgred);
     position: sticky;
     top:0px;
     left: 0px;
@@ -35,7 +39,7 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 10;
-    /* background: #d90000; */
+    /* background: var(--bgred); */
 }
 .header-container .logo-main{
     display: flex;
@@ -89,7 +93,7 @@ header{
 /*the media querys of the header section*/
 
 @media only screen and (min-width: 1024px) {
-    .button-show, .button-show-container, .icon-main{
+    .header-container .button-show, .button-show-container, .icon-main{
         display: none;
     }
     header{
@@ -107,6 +111,16 @@ header{
     .header-container .logo-main img{
         width: 5em;
         height: 5em;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-container .logo-main img{
+        width: 4em;
+        height: 4em;
+    }
+    .header-container .title-main .title{
+        font-size: 2em;
     }
 }
 
@@ -148,7 +162,7 @@ nav{
 .links-main .link-container a{
     text-decoration: none;
     font-size: 1.3em;
-    color: #d8da66;
+    color: var(--bgnav);
     height: 100%;
     transition: 0.9s;
     line-height: 2;
@@ -160,7 +174,7 @@ nav{
         display: block;
         width: 0;
         height: 3px;
-        background: var(--vgnav);
+        background: var(--bgnav);
         position: absolute;
         left: 0;
         bottom: 0;
@@ -191,7 +205,7 @@ nav{
 }
 @media only screen and (max-width: 1024px) {
     .xd .show .links-main{
-        background: #d90000;
+        background: var(--bgred);
         transition: 0.5s;
     }
     .xd.opacity .show .links-main{
@@ -222,8 +236,8 @@ footer {
     font-size: 16px;
     width: auto;
     padding: 1em;
-    background: #d90000;
-    color: #d8da66;
+    background: var(--bgred);
+    color: var(--bgnav);
     font-family: "UWC arabic";
     display: flex;
 }
@@ -254,7 +268,7 @@ footer .info-container{
 footer .info-container a{
     padding: 0.3em;
     text-decoration: none;
-    color: #d8da66;
+    color: var(--bgnav);
     font-size: 1.15em;
 }
 /*The media querys*/
@@ -302,7 +316,7 @@ footer .info-container a{
 }
 
 .SI ion-icon{
-    color: #d8da66;
+    color: var(--bgnav);
     font-size: 2em;
 
 }

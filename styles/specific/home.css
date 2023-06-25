@@ -10,6 +10,12 @@
     color: black;
 }
 
+@media (max-width: 750px) {
+    .opacity nav .links-main .link-container a{
+        color: white;
+    }
+}
+
 /***********************************************/
 /***********The styles of the gallery**********/
 /*********************************************/

@@ -9,10 +9,17 @@
     <title>El sureñito</title>
     <link rel="shortcut icon" href="../sources/icons/Icon-WebSite.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/main.css">
+    <style>
+        .links-main{
+            background: #d90000;
+        }
+    </style>
 </head>
     <body>
-        <header>
-            <!--Here we made the header that will have the logo, title and button, this last is going to help users to able and disable the floating menu-->
+        <header class="xd">
+            <!--Here we made the header that will have the logo,
+                title and button, this last is going to help 
+                users to able and disable the floating menu-->
             <div class="header-container">
                 <!--Also here there are containers that will have the elements one per one-->
                 <div class="logo-main">
@@ -20,7 +27,7 @@
                 </div>
                 <div class="title-main">
                     <h1 class="title">
-                        <a href="./">El Sureñito</a>
+                        <a href="../index.html">El Sureñito</a>
                     </h1>
                 </div>
                 <div class="button-show">
@@ -58,25 +65,122 @@
         <div class="social-icons">
             <ul class="social-links-ul">
                 <li class="telefono">
-                    <a href="#">
+                    <a href="tel:+51923085776" target="_blank">
                         <ion-icon name="call-outline"></ion-icon>
                     </a>
                 </li>
                 <li class="gmail">
-                    <a href="#">
+                    <a href="mailto:coserojasj@gmail.com" target="_blank">
                         <ion-icon name="mail-outline"></ion-icon>
                     </a>
                 </li>
                 <li class="whatsapp">
-                    <a href="#">
+                    <a href="https://wa.link/jim16v" target="_blank">
                         <ion-icon name="logo-whatsapp"></ion-icon>
                     </a>
                 </li>
             </ul>
         </div>
 
-        
-        
+
+
+        <!--From now on this part, i'll develop the exclusive content of the product's page-->
+        <div class="container-services">
+            <div class="title-services">
+                <h1>Servicio diario</h1>
+            </div>
+            <div class="services-container" id="breakfast">
+                <div class="title-menus-service">Desayuno S/10</div>
+                <div class="container-imgs-menus">
+                    <div class="img-container-menu">
+                        <img src="../sources/images/plato-example (Custom).png" alt="img1" class="img-mn">
+                        <p class="name-menu">Bebida</p>
+                    </div>
+                    <div class="img-container-menu">
+                        <img src="../sources/images/plato-example (Custom).png" alt="img2" class="img-mn">
+                        <p class="name-menu">Acompañamiento</p>
+                    </div>
+                </div>
+            </div>
+            <div class="services-container" id="menu">
+                <div class="title-menus-service">Almuerzo(Menú) S/12</div>
+                <div class="container-imgs-menus">
+                    <div class="img-container-menu">
+                        <img src="../sources/images/plato-example (Custom).png" alt="img1" class="img-mn">
+                        <p class="name-menu">Bebida</p>
+                    </div>
+                    <div class="img-container-menu">
+                        <img src="../sources/images/plato-example (Custom).png" alt="img2" class="img-mn">
+                        <p class="name-menu">Entrada</p>
+                    </div>
+                    <div class="img-container-menu">
+                        <img src="../sources/images/plato-example (Custom).png" alt="img2" class="img-mn">
+                        <p class="name-menu">Plato Fuerte</p>
+                    </div>
+                </div>
+            </div>
+            <div class="services-container" id="dinner">
+                <div class="title-menus-service">Cena S/10</div>
+                <div class="container-imgs-menus">
+                    <div class="img-container-menu">
+                        <img src="../sources/images/plato-example (Custom).png" alt="img1" class="img-mn">
+                        <p class="name-menu">Bebida</p>
+                    </div>
+                    <div class="img-container-menu">
+                        <img src="../sources/images/plato-example (Custom).png" alt="img2" class="img-mn">
+                        <p class="name-menu">Plato Fuerte</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="customFood-container">
+            <div class="title-services">
+                <h1>Platos a la carta a tu gusto</h1>
+            </div>
+            
+            <div class="customFood-container-imgs">
+                <div class="img-container-CF">
+                    <img src="../sources/images/plato-example (Custom).png" alt="img1" class="img-CF">
+                    <p class="name-CF">Plato1</p>
+                </div>
+                <div class="img-container-CF">
+                    <img src="../sources/images/plato-example (Custom).png" alt="img2" class="img-CF">
+                    <p class="name-CF">Plato2</p>
+                </div>
+                <div class="img-container-CF">
+                    <img src="../sources/images/plato-example (Custom).png" alt="img2" class="img-CF">
+                    <p class="name-CF">Plato3</p>
+                </div>
+                <div class="img-container-CF">
+                    <img src="../sources/images/plato-example (Custom).png" alt="img2" class="img-CF">
+                    <p class="name-CF">Plato4</p>
+                </div>
+                <div class="img-container-CF">
+                    <img src="../sources/images/plato-example (Custom).png" alt="img2" class="img-CF">
+                    <p class="name-CF">Plato5</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ad-section">
+            <div class="title-ad">
+                <h1>¿No puedes venir? Descuida, te lo llevamos a la puerta de tu casa, si vives cerca :D</h1>
+            </div>
+            <div class="iconsAndText-ad-cntnr">
+                <div class="iconsAndText-ad-btn">
+                    <a href="./aboutUs.html" class="btn">
+                        <button class="btn-content">Llámanos</button>
+                        <span class="icon">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <!--'Til here-->
         <footer>
             <div class="brand-container">
                 <div class="logo-container">

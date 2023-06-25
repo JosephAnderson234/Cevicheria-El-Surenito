@@ -19,12 +19,13 @@ setTimeout(clearHeader, 0000)
 const buttonGalleryB = document.getElementsByClassName("before");
 const buttonGalleryA = document.getElementsByClassName("after");
 
+
 buttonGalleryB[0].addEventListener("click", ()=>{
     var left = document.querySelector(".scroll-images");
-    left.scrollBy(-400, 0);
+    left.scrollBy(-1111, 0);
 })
 
 buttonGalleryA[0].addEventListener("click", ()=>{
     var left = document.querySelector(".scroll-images");
-    left.scrollBy(400, 0);
+    left.scrollBy(1111, 0);
 })
