@@ -9,6 +9,15 @@
         "button-name": "off",
         "link-name": "off"
       }
-    ]
+    ],
+    "no-inline-styles": "off",
+    "compat-api/html": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "frame-title": "off"
+      }
+    ],
+    "disown-opener": "off"
   }
 }
