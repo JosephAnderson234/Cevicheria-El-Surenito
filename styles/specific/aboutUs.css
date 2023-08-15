@@ -31,6 +31,24 @@ blockquote p cite{
     margin: 5em auto;
 }
 
+@media only screen and (max-width: 1024px) {
+    .tile-promotion{
+        font-size: 2.9em;
+    }
+    blockquote p{
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width: 690px){
+    .tile-promotion{
+        font-size: 2.4em;
+    }
+    .container-cite{
+        width: 85%;
+        margin: 3;
+    }
+}
+
 /************************************************/
 /********the history's section style************/
 /**********************************************/
@@ -83,6 +101,28 @@ blockquote p cite{
     width: 100%;
 }
 
+@media only screen and (max-width: 1024px) {
+    .history-cnt-content p{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 690px){
+    .history-container .history-cnt-main{
+        flex-direction: column;
+        width: 88%;
+    }
+    .history-cnt-content{
+        width: 100%;
+    }
+    .history-cnt-content h1{
+        font-size: 2.5em;
+    }
+    .history-cnt-picture{
+        width: 100%;
+    }
+}
+
 /************************************************/
 /********end of the history's section style*****/
 /**********************************************/
@@ -108,6 +148,7 @@ blockquote p cite{
 .ubication-cnt{
     padding: 2.5%;
     width: 50%;
+    height: 450px;
 }
 
 .ubication-cnt iframe{
@@ -133,8 +174,24 @@ blockquote p cite{
     font-size: 4em;
     padding: 0.2em 0.2em 0em 0.2em;
     border-radius: 0.5em;
+    transition: 5s;
 }
 
+.social-links-ul li:hover{
+    animation: hoverSocial 1s infinite;
+}
+
+@keyframes hoverSocial {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(25deg);
+    }
+    100%{
+        transform: rotateZ(-25deg);
+    }
+}
 
 .telefono{
     background: black;
@@ -147,7 +204,7 @@ blockquote p cite{
     background: whitesmoke;
 }
 .gmail a{
-    color: rgb(59, 59, 202);
+    color: rgb(255, 5, 5);
 /*     color: linear-gradient(27deg, rgba(64,134,244,1) 0%, rgba(198,28,25,1) 23%, rgba(235,65,50,1) 44%, rgba(251,189,0,1) 70%, rgba(49,169,82,1) 100%); */
 /*     color: transparent; */
 /*     -webkit-background-clip: text;
@@ -161,4 +218,34 @@ blockquote p cite{
 }
 .whatsapp a{
     color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container-contact .contact-cnt-main{
+        flex-direction: column;
+    }
+    .ubication-cnt{
+        width: 90%;
+    }
+    .social-links-ul li{
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 690px){
+    .contact-cnt{
+        width: 50%;
+    }
+    .social-links-ul li{
+        font-size: 2.7em;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .contact-cnt{
+        width: 60%;
+    }
+    .social-links-ul li{
+        font-size: 2em;
+    }
 }

@@ -1,5 +1,6 @@
 @import url("./specific/home.css");
 @import url("./specific/products.css");
+@import url("./specific/tyc.css");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
 :root{
@@ -190,7 +191,7 @@ nav{
 /*the media querys of the nav section*/
 @media only screen and (min-width: 1024px) {
     nav{
-        width: 30%;
+        width: 35%;
         display: block;
         position: sticky;
         top:0;
