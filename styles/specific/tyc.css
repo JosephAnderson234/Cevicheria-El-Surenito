@@ -1,0 +1,27 @@
+.content-TaC{
+    width: 80%;
+    padding: 2em 10%;
+    font-family:  'Open Sans', "UWC Arabic", sans-serif;
+}
+
+.content-TaC p{
+    text-align: justify;
+}
+
+@media screen and (max-width: 470px) {
+    .content-TaC h2{
+        font-size: 1.1em;
+    }
+    .content-TaC p{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .content-TaC h2{
+        font-size: 0.9em;
+    }
+    .content-TaC p{
+        font-size: 0.6em;
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Cevicheria Sureñito Restaurant">
+    <meta name="description" content="La cevicheria que te ofrece lo mejor de lo mejor">
+    <meta name="author" content="JosephDev234">
+    <title>El sureñito</title>
+    <link rel="shortcut icon" href="./sources/icons/Icon-WebSite.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+    <body>
+        <header class="xd">
+            <!--Here we made the header that will have the logo,
+                title and button, this last is going to help 
+                users to able and disable the floating menu-->
+            <div class="header-container">
+                <!--Also here there are containers that will have the elements one per one-->
+                <div class="logo-main">
+                    <img src="./sources/icons/Final Version.png" alt="logo" class="logo">
+                </div>
+                <div class="title-main">
+                    <h1 class="title">
+                        <a href="./">El Sureñito</a>
+                    </h1>
+                </div>
+                <div class="button-show">
+                    <div class="button-show-container">
+                        <ion-icon name="grid" class="icon-main"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul class="links-main">
+                    <li class="link-container here">
+                        <a href="./" class="link">
+                            <ion-icon name="home-outline"></ion-icon>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="link-container">
+                        <a href="./pages/productos.html" class="link">
+                            <ion-icon name="albums-outline"></ion-icon>
+                            Productos
+                        </a>
+                    </li>
+                    <li class="link-container">
+                        <a href="./pages/aboutUs.html" class="link">
+                            <ion-icon name="business-outline"></ion-icon>
+                            Acerca de Nosotros
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="SI">
+            <ion-icon name="caret-up-circle-outline"></ion-icon>
+        </div>
+        <div class="social-icons">
+            <ul class="social-links-ul">
+                <li class="telefono">
+                    <a href="tel:+51923085776" target="_blank">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </a>
+                </li>
+                <li class="gmail">
+                    <a href="mailto:coserojasj@gmail.com" target="_blank">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                </li>
+                <li class="whatsapp">
+                    <a href="https://wa.link/jim16v" target="_blank">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- in this section will be the galery of some images-->
+        <div class="generalGallery">
+            <div class="main-scroll-div">
+                <div class="cover-nav" id="iconDivL">
+                    <!-- there are some buttons that will move the images to look at this the next one -->
+                    <button class="icon before">
+                        <ion-icon name="arrow-back-circle"></ion-icon>
+                    </button>
+                </div>
+                <div class="cover">
+                    <div class="scroll-images">
+                        <div class="child">
+                            <img class="child-img" src="./sources/images/BANNER.jpg" alt="image1">
+                        </div>
+                        <div class="child">
+                            <img class="child-img" src="./sources/images/BANNER 2.jpg" alt="image2">
+                        </div>
+                        <div class="child">
+                            <img class="child-img" src="./sources/images/BANNER 3.jpg" alt="image3">
+                        </div>
+                    </div>
+                </div>
+                <div class="cover-nav" id="iconDivR">
+                    <button class="icon after">
+                        <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- menu section that will show some images -->
+        <div class="menu-section">
+            <div class="title-section">
+                <h1>Disfruta de nuestra sazón casera en tu menú</h1>
+            </div>
+            <div class="images-menu">
+                <img src="./sources/images/lunch/drink.jpg" class="img-menu" alt="1">
+                <img src="./sources/images/lunch/main course.jpg" class="img-menu" alt="2">
+                <img src="./sources/images/lunch/soup.jpg" class="img-menu" alt="3">
+            </div>
+        </div>
+        <br/>
+
+        <!-- platos a la carta¿s section, the name reveal the rest-->
+        <div class="carta-section">
+            <div class="title-section">
+                <h1> Y platos a la carta:</h1>
+            </div>
+            <div class="images-carta">
+                <img src="./sources/images/custom-food/cstm1.jpg" alt="2" class="img-platos">
+                <img src="./sources/images/custom-food/cstm2.jpg" alt="3" class="img-platos">
+                <img src="./sources/images/custom-food/cstm3.jpg" alt="1" class="img-platos">
+            </div>
+        </div>
+        
+        <footer>
+            <div class="brand-container">
+                <div class="logo-container">
+                    <img src="./sources/icons/Final Version.png" alt="logo" class="logo2">
+                </div>
+                <h1 class="copyright">©El Sureñito</h1>
+            </div>
+            <div class="info-container">
+                <a href="./pages/termsAndConditions.html" class="TermsAndConditions">Terminos y condiciones</a>
+                <a href="./pages/aboutUs.html" class="contact">Contacto</a>
+            </div>
+        </footer>
+    </body>
+    <!-- the scripts section -->
+    <script src="./scripts/home.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+    </script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+    </script>
+</html>

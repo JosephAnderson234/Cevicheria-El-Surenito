@@ -1,0 +1,424 @@
+
+/**********************************************/
+/****The section that has all the services****/
+/********************************************/
+
+/*The section of the menu, and some general styles of some parts of that*/
+.container-services, .customFood-container, .ad-section{
+    background: var(--bgnav);
+}
+
+.container-services, .customFood-container{
+    width: 100%;
+}
+
+.title-services{
+    width: 100%;
+    height: 3em;
+    transform: translateY(-3em);
+    transition: 0.5s;
+}
+
+.title-services h1{
+    background: var(--bgnav);
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "UWC arabic";
+    font-size: 3.2em;
+    color: var(--bgred);
+    text-align: center;
+}
+
+.container-services .services-container{
+    width: 100%;
+}
+
+.container-services .services-container .title-menus-service{
+    position: relative;
+    display: flex;
+    margin: 1em 0;
+    padding: 0 1em;
+    width: 30vw;
+    height: 2.5em;
+    justify-content: end;
+    align-items: center;
+    font-family: "UWC arabic";
+    font-size: 2em;
+    background: var(--bgred);
+    border-radius: 0 20px 20px 0;
+    transform: translateX(-4em);
+    transition: 0.5s;
+}
+.container-services .services-container .title-menus-service:hover{
+    transform: translateX(0em);
+    font-size: 2.05em;
+}
+
+.container-services .services-container .container-imgs-menus{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    padding: 1em;
+}
+
+.container-imgs-menus .img-container-menu{
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-imgs-menus .img-container-menu .img-mn{
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    border-radius: 20%;
+    z-index: 2;
+    transition: 0.2s;
+}
+
+.container-imgs-menus .img-container-menu p{
+    position: relative;
+    padding: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    z-index: 1;
+    transition: 0.2s;
+    transform: translateY(-50px);
+}
+
+.container-imgs-menus .img-container-menu:hover .img-mn{
+    filter: saturate(180%);
+    -webkit-transform:scale(0.95);
+    transform:scale(0.95);
+}
+
+.container-imgs-menus .img-container-menu:hover p{
+    transform: translateY(0);
+}
+
+/*this section is concerning the custom food that you can request in the day*/
+
+.customFood-container-imgs{
+    display: flex;
+    padding: 2em 0em 2em 2em;
+    overflow: auto;
+    /* gap: 2em; */
+}
+
+.customFood-container-imgs::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+
+.img-container-CF{
+    min-width: 23em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.img-CF{
+    width: 80%;
+    border-radius: 20%;
+    transition: 1s;
+    z-index: 2;
+    -webkit-transform:scale(0.8);
+    transform: scale(0.8);
+}
+
+.name-CF{
+    position: absolute;
+    top: calc(50%-1em);
+    width: 3em;
+    height: 1em;
+    right: calc(50%-3em);
+    z-index: 1;
+    transform: rotateY(180deg);
+    transition: 1s;
+    font-size: 2em;
+    font-family: "UWC arabic";
+    text-align: center;
+}
+
+.img-container-CF:hover .img-CF{
+    overflow:hidden;
+    filter: blur(9px);
+    -webkit-transform:scale(0.9);
+    transform: rotateY(180deg) scale(0.9);
+}
+
+.img-container-CF:hover .name-CF{
+    transform: rotateY(0deg);
+    z-index: 3;
+}
+
+.ad-section {
+    padding: 1em;
+}
+
+.title-ad {
+    width: 90%;
+    margin: 0 auto;
+}
+.ad-section .title-ad h1{
+    background: var(--bgnav);
+    font-family: "UWC arabic";
+    font-size: 3.2em;
+    color: var(--bgred);
+    text-align: center;
+}
+
+.iconsAndText-ad-cntnr{
+    width: 60%;
+    display: flex;
+    margin: 3em auto;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.iconsAndText-ad-btn{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.iconsAndText-ad-btn .btn{
+    width: 60%;
+    height: 5em;
+    border-radius: 4px;
+    border: 2px solid var(--bgred);
+    border-radius: 1em;
+    color: var(--bgred);
+    display: flex;
+    overflow: hidden;
+    padding: 24px 60px 24px 16px;
+    position: relative;
+    text-decoration: none;
+    line-height: 1;
+    justify-content: center;
+}
+
+.iconsAndText-ad-btn .btn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--bgred);
+    opacity: 0;
+    transition: opacity 0.39s ease;
+}
+
+.iconsAndText-ad-btn .btn:hover .btn-content {
+    right: 100%;
+}
+
+.iconsAndText-ad-btn .btn:hover:after {
+    opacity: 0.2;
+}
+
+.iconsAndText-ad-btn .btn .btn-content{
+    font-family: "UWC arabic";
+    color: var(--bgred);
+    background: var(--bgnav);
+    width: 60%;
+    border-radius: 0.15em;
+    cursor: pointer;
+    border: none;
+    margin: 0px 1em 0px 0px;
+    font-size: 2.5em;
+    line-height: 1.2;
+    padding: 0 26px;
+    position: relative;
+    right: 0;
+    transition: right 0.39s ease;
+    display: block;
+    text-align: left;
+}
+
+.iconsAndText-ad-btn .btn:hover .btn-content {
+    right: 100%;
+}
+
+
+.iconsAndText-ad-btn .btn .icon{
+    border-left: 1px solid var(--bgred);
+    position: absolute;
+    right: 0;
+    font-size: 3em;
+    text-align: center;
+    top: 50%;
+    transition: all 300ms ease;
+    transform: translateY(-50%);
+    width: 20%;
+    height: 70%;
+}
+
+.iconsAndText-ad-btn .btn:hover .icon {
+    border-left: 0;
+    font-size: 4em;
+    width: 100%;
+}
+
+.iconsAndText-ad-btn .btn .icon ion-icon{
+    color: var(--bgred);
+    font-size: 1em;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 0.1em;
+    border-radius: 0.15em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.iconsAndText-ad-btn:hover button, .iconsAndText-ad-btn:hover ion-icon {
+    background: var(--bgnav);
+    color: var(--bgred);
+}
+
+
+/*media queries*/
+
+/*Tablet's view*/
+@media (max-width: 1024px) {
+    .title-services h1{
+        font-size: 2.8em;
+    }
+    .container-services .services-container .title-menus-service{
+        font-size: 1.5em;
+    }
+    .container-services .services-container .title-menus-service:hover{
+        font-size: 1.7em;
+    }
+    .container-imgs-menus .img-container-menu p{
+        font-size: 0.8em;
+    }
+    .img-container-CF{
+        min-width: 20em;
+    }
+    .name-CF{
+        font-size: 1.8em;
+    }
+    .iconsAndText-ad-btn .btn{
+        height: 4em;
+    }
+}
+
+@media (max-width: 831px) {
+    .title-services{
+        transform: translateY(0);
+        height: 4em;
+    }
+    .container-services .services-container .title-menus-service{
+        transform: translateX(0);
+        width: 45vw;
+    }
+    .iconsAndText-ad-btn .btn{
+        height: 3em;
+    }
+    .iconsAndText-ad-btn .btn .btn-content{
+        font-size: 2em;
+    }
+    .iconsAndText-ad-btn .btn .icon{
+        font-size: 2em;
+    }
+    .iconsAndText-ad-btn .btn:hover .icon {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 725px) {
+    .container-services .services-container .container-imgs-menus{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-imgs-menus .img-container-menu{
+        width: 50vw;
+        margin: 0 auto;
+    }
+    .container-imgs-menus .img-container-menu p{
+        font-size: 1.2em;
+    }
+    .ad-section .title-ad h1{
+        font-size: 2.9em;
+    }
+}
+
+@media (max-width: 600px){
+    .iconsAndText-ad-btn .btn{
+        height: 2em;
+    }
+    .iconsAndText-ad-btn .btn .icon{
+        width: 24%;
+    }
+    
+}
+
+
+@media (max-width: 580px){
+    .title-services h1{
+        font-size: 2.5em;
+    }
+    .ad-section .title-ad h1{
+        font-size: 2.2em;
+    }
+    .iconsAndText-ad-btn .btn .icon{
+        width: 24%;
+    }
+    .iconsAndText-ad-btn .btn .btn-content{
+        width: 70%;
+        font-size: 1.7em;
+    }
+    
+}
+
+
+@media (max-width: 530px){
+    .container-imgs-menus .img-container-menu{
+        width: 70vw;
+    }
+    .ad-section .title-ad h1{
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width: 480px){
+    .iconsAndText-ad-btn .btn{
+        padding-left: 9px;
+    }
+    .iconsAndText-ad-btn .btn .btn-content{
+        padding-left: 0.5em;
+    }
+    .customFood-container-imgs{
+        gap: 0em;
+        padding-left: 0em;
+    }
+    .img-container-CF{
+        min-width: 15em;
+    }
+}
+
+@media (max-width: 400px){
+    .title-services h1{
+        font-size: 1.7em;
+    }
+    .container-services .services-container .title-menus-service{
+        width: 55vw;
+        font-size: 1.2em;
+    }
+    .iconsAndText-ad-btn .btn{
+        padding-left: 0em;
+    }
+    .iconsAndText-ad-btn .btn:hover .icon {
+        font-size: 2em;
+    }
+}

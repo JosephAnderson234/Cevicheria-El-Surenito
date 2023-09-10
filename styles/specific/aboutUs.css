@@ -1,0 +1,251 @@
+/*The cite's style*/
+blockquote{
+    background:var(--bgnav) url("http://aprendiendoweb.com/static/blog/img/quote-image.png") no-repeat scroll 10px 10px;
+    padding:25px 25px 25px 70px;
+    border-radius: 1em;
+}
+blockquote  p{
+    font-size: 25px;
+    color: #1f1e1e;
+    font-family: "UWC Arabic";
+}
+blockquote p cite{
+    padding-top: 1em;
+    color:#444444;
+    font-size: 20px;
+    display:block;
+    text-align:right;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*another ones*/
+.tile-promotion{
+    width: 100%;
+    text-align: center;
+    font-size: 3.5em;
+    font-family: "UWC arabic";
+    margin: 1em 0em;
+}
+
+.container-cite{
+    width: 70%;
+    margin: 5em auto;
+}
+
+@media only screen and (max-width: 1024px) {
+    .tile-promotion{
+        font-size: 2.9em;
+    }
+    blockquote p{
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width: 690px){
+    .tile-promotion{
+        font-size: 2.4em;
+    }
+    .container-cite{
+        width: 85%;
+        margin: 3;
+    }
+}
+
+/************************************************/
+/********the history's section style************/
+/**********************************************/
+
+.history-container{
+    background: var(--bgred);
+    width: 100%;
+    padding: 2em 0em;
+}
+
+.history-container .history-cnt-main{
+    background: var(--bgnav);
+    width: 95%;
+    margin: 0em auto;
+    padding: 1em;
+    border-radius: 2em;
+    display: flex;
+}
+
+.history-cnt-content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.history-cnt-content h1{
+    font-family: "UWC Arabic", "Calibri";
+    font-size: 2.7em;
+    width: 100%;
+    text-align: center;
+}
+
+.history-cnt-content p{
+    width: 95%;
+    text-align: justify;
+    margin: 1em 2.5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+}
+
+.history-cnt-picture{
+    width: 40%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.history-cnt-picture img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .history-cnt-content p{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 690px){
+    .history-container .history-cnt-main{
+        flex-direction: column;
+        width: 88%;
+    }
+    .history-cnt-content{
+        width: 100%;
+    }
+    .history-cnt-content h1{
+        font-size: 2.5em;
+    }
+    .history-cnt-picture{
+        width: 100%;
+    }
+}
+
+/************************************************/
+/********end of the history's section style*****/
+/**********************************************/
+
+/*contact section*/
+
+.container-contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-contact .contact-cnt-main{
+    display: flex;
+    width: 90%;
+    background: var(--bgnav);
+    border-radius: 2em;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.ubication-cnt{
+    padding: 2.5%;
+    width: 50%;
+    height: 450px;
+}
+
+.ubication-cnt iframe{
+    border-radius: 1em;
+}
+
+.contact-cnt{
+    padding: 2.5%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-cnt .social-links-ul{
+    list-style: none;
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-links-ul li{
+    font-size: 4em;
+    padding: 0.2em 0.2em 0em 0.2em;
+    border-radius: 0.5em;
+    transition: 5s;
+}
+
+.social-links-ul li:hover{
+    animation: hoverSocial 1s infinite;
+}
+
+@keyframes hoverSocial {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(25deg);
+    }
+    100%{
+        transform: rotateZ(-25deg);
+    }
+}
+
+.telefono{
+    background: black;
+}
+.telefono a{
+    color: wheat;
+}
+
+.gmail{
+    background: whitesmoke;
+}
+.gmail a{
+    color: rgb(255, 5, 5);
+/*     color: linear-gradient(27deg, rgba(64,134,244,1) 0%, rgba(198,28,25,1) 23%, rgba(235,65,50,1) 44%, rgba(251,189,0,1) 70%, rgba(49,169,82,1) 100%); */
+/*     color: transparent; */
+/*     -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; */
+}
+
+.whatsapp{
+    background: #30d450;
+}
+.whatsapp a{
+    color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container-contact .contact-cnt-main{
+        flex-direction: column;
+    }
+    .ubication-cnt{
+        width: 90%;
+    }
+    .social-links-ul li{
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 690px){
+    .contact-cnt{
+        width: 50%;
+    }
+    .social-links-ul li{
+        font-size: 2.7em;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .contact-cnt{
+        width: 60%;
+    }
+    .social-links-ul li{
+        font-size: 2em;
+    }
+}
