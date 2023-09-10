@@ -36,7 +36,6 @@ header{
     font-size: 16px;
     font-family: "UWC arabic";
     display: flex;
-    height: 1;
     align-items: center;
     justify-content: space-between;
     z-index: 10;
@@ -141,6 +140,13 @@ nav{
 .show{
     display: block;
     height: 0px;
+    /* top: 0px; */
+}
+
+@media only screen and (min-width: 930px) {
+    .show{
+        height: auto;
+    }
 }
 
 
