@@ -87,7 +87,7 @@
     font-size: 1.2em;
     z-index: 1;
     transition: 0.2s;
-    transform: translateY(-50px);
+    transform: translateY(-70px);
 }
 
 .container-imgs-menus .img-container-menu:hover .img-mn{
@@ -134,10 +134,10 @@
 
 .name-CF{
     position: absolute;
-    top: calc(50%-1em);
-    width: 3em;
+    top: calc(50% - 1em);
+    width: 4em;
     height: 1em;
-    right: calc(50%-3em);
+    left: calc(50% - 2em);
     z-index: 1;
     transform: rotateY(180deg);
     transition: 1s;
